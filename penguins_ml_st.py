@@ -14,11 +14,10 @@ st.title('Penguin Classifier: A Machine Learning App')
 st.write("This app uses 6 inputs to predict the species of penguin using a model"
     " built on the Palmer Penguins dataset. Use the form bellow to get started")
 
-password_guess = st.text_input('The uppercase abreviattion of the most beautiful and wonderful city in the world (hint: tree letters)', type='password')
+password_guess = st.text_input('What is the password')
 
-
-if password_guess != 'MAP':  
-    st.write('waiting the correct password...')
+if password_guess != st.secrets["password"]  
+    # st.write('waiting the correct password...')
     st.stop()
 
 
