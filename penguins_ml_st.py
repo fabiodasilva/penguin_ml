@@ -16,7 +16,7 @@ st.write("This app uses 6 inputs to predict the species of penguin using a model
 
 password_guess = st.text_input('What is the password')
 
-if password_guess != st.secrets["password"]  
+if password_guess != st.secrets["password"]:  
     # st.write('waiting the correct password...')
     st.stop()
 
